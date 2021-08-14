@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header">
+      <div id="game-name">
+        <h1>rock</h1>
+        <h1>paper</h1>
+        <h1>scissors</h1>
+      </div>
+      <div id="score-box">
+        <h2>score</h2>
+        <span id="actual-score">12</span>
+      </div>
+    </div>
+    <div id="game-container">
+      <h2 id="my-selection-title">You picked</h2>
+      <h2 id="house-selection-title">The house picked</h2>
+      <div id="rock" class="coin"></div>
+      <div id="paper" class="coin"></div>
+      <div id="scissors" class="coin"></div>
+      <div id="house-selection">
+        <div id="result-box">
+          <h2 id="result-txt">YOU LOSE</h2>
+          <input type="button" id="play-again-button" value="PLAY AGAIN" onclick="reloadPage()"/>
+        </div>
+        
+      </div>
+    </div>
+    <h2 id="rules-btn">Rules</h2>
+    
+  </div>
+  <div id="rules-window">
+    <h2>RULES</h2>
+    <img id="close-icon" src="./images/icon-close.svg" />
+    <img id="rules-image" src="./images/image-rules.svg" />
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
