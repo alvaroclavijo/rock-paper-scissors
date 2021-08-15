@@ -280,45 +280,87 @@ body{
 @media (max-width:376px){
     body{
         width: 100%;
-        height: 100vh;
+        height: 97vh;
         background-image: radial-gradient(hsl(214, 47%, 23%) 20% , hsl(237, 49%, 15%));
     }
     #main-container{
         width: 100%;
-        height: 100vh;
+        height: 96vh;
         margin: auto;
     }
     #header{
-        width: 375px;
-        height: 140px;
-        margin-left: 100px;
+        width: 85%;
+        height: 110px;
+        margin-left: 25px;
         border: 3px solid #5C6A83;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 20px;
         display: flex;
         flex-wrap: row wrap;
         justify-content: space-between;
         align-items: center;
     }
+    #game-name{
+        color: #F9F9F9;
+        margin-left: 3%;
+        font-family: "Barlow-Bold";
+        font-size: 14px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        flex: 1;
+    }
+    #score-box{
+        margin-right: 3%;
+        width: 120px;
+        height: 100px;
+        background-color: #F9F9F9;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #score-box h2{
+        font-family: "Barlow-Semibold";
+        font-size: 23px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: hsl(229, 64%, 46%);
+    
+    }
+    #actual-score{
+        font-family: "Barlow-Bold";
+        font-size: 50px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        color: #5A576A;
+    }
 
     #game-container{
         position: relative;
-        margin: 20px 10px;
+        margin: 0px 0px;
         margin-bottom: 0px;
         width:100% ;
         height: 430px;
         background-image: url(../images/bg-triangle.svg);
+        background-size:200px 200px ;
         background-position: center;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
     }
     .coin{
-        width: 136px;
-        height: 136px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         background-color: #DDDDDD;
-        background-size: 70px 70px;
+        background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
         background-position:center ;
@@ -327,9 +369,9 @@ body{
     }
     #paper{
         position: absolute;
-        left: 110px;
-        top: 50px;
-        border: 23px solid hsl(230, 89%, 65%);
+        left: 10px;
+        top: 40px;
+        border: 12px solid hsl(230, 89%, 65%);
         background-image: url(../images/icon-paper.svg);
         box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
     
@@ -354,9 +396,9 @@ body{
     }
     #scissors{
         position: absolute;
-        left: 375px;
-        top: 50px;
-        border: 23px solid hsl(40, 84%, 53%);
+        left: 235px;
+        top: 40px;
+        border: 12px solid hsl(40, 84%, 53%);
         background-image: url(../images/icon-scissors.svg);
         box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
     }
@@ -380,9 +422,9 @@ body{
     }
     #rock{
         position: absolute;
-        left:250px ;
-        top: 286px;
-        border: 23px solid hsl(349, 70%, 56%) ;
+        left:115px ;
+        top: 276px;
+        border: 12px solid hsl(349, 70%, 56%) ;
         background-image: url(../images/icon-rock.svg);
         box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset ;
     
@@ -417,30 +459,32 @@ body{
         text-align: center;
         border-radius: 6px;
         position: absolute;
-        right: 150px;
+        right: 30px;
+        top:600px;
         letter-spacing: 3px;
         cursor:pointer;
     
     }
     #rules-window{
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 394px;
         background-color: #F9F9F9;
         border-radius: 20px;
         position: relative;
-        top: -600px;
-        left: 560px;
+        top: -520px;
+        left: 15px;
         display: none;
         transition: all 2s;
+}
     }
     #rules-image{
         position: absolute;
-        left: 50px;
+        left: 23px;
         top: 100px;
     }
     #rules-window h2{
         font-family: "Barlow-Bold";
-        font-size: 35px;
+        font-size: 25px;
         color:hsl(229, 64%, 46%);
         position: absolute;
         top: 20px;
