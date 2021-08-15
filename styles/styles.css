@@ -377,20 +377,19 @@ body{
     
     }
     #paper-housebtn{
-        width: 200px;
-        height: 200px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         background-color: #DDDDDD;
-        background-size: 70px 70px;
+        background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
         background-position:center ;
-        background-size: 120px 120px;
         transition: all 1.5s;
         position: absolute;
-        left: 450px;
-        top: 80px;
-        border: 23px solid hsl(230, 89%, 65%);
+        left: 225px;
+        top: 40px;
+        border: 12px solid hsl(230, 89%, 65%);
         background-image: url(../images/icon-paper.svg);
         box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
     }
@@ -403,20 +402,19 @@ body{
         box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
     }
     #scissors-housebtn{
-        width: 200px;
-        height: 200px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         background-color: #DDDDDD;
-        background-size: 70px 70px;
+        background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
         background-position:center ;
-        background-size: 120px 120px;
         transition: all 1.5s;
         position: absolute;
-        left: 450px;
-        top: 80px;
-        border: 23px solid hsl(40, 84%, 53%);
+        left: 225px;
+        top: 40px;
+        border: 12px solid hsl(40, 84%, 53%);
         background-image: url(../images/icon-scissors.svg);
         box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
     }
@@ -430,20 +428,19 @@ body{
     
     }
     #rock-housebtn{
-        width: 200px;
-        height: 200px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         background-color: #DDDDDD;
-        background-size: 70px 70px;
+        background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
         background-position:center ;
-        background-size: 120px 120px;
         transition: all 1.5s;
         position: absolute;
-        left: 450px;
-        top: 80px;
-        border: 23px solid hsl(349, 70%, 56%) ;
+        left: 225px;
+        top: 40px;
+        border: 12px solid hsl(349, 70%, 56%) ;
         background-image: url(../images/icon-rock.svg);
         box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset  ;
     }
@@ -476,7 +473,7 @@ body{
         display: none;
         transition: all 2s;
 }
-    }
+
     #rules-image{
         position: absolute;
         left: 23px;
@@ -509,19 +506,25 @@ body{
     
     #my-selection-title{
         float: left;
+        width: 30%;
         margin-left: 15px;
+        margin-top: 0px;
+        font-size: 20px;
     }
     
     #house-selection-title{
-        margin-left: 470px;
+        width: 46%;
+        margin-left: 200px;
+        margin-top: 25px;
+        font-size: 20px;
     }
     
     #result-box{
         width: 230px;
         height: 120px;
         position: relative;
-        top: 120px;
-        left: 215px;
+        top: 200px;
+        left: 75px;
         display: none;
     }
     

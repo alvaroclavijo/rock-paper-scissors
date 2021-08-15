@@ -12,8 +12,8 @@ var houseSelectionTitle = document.getElementById("house-selection-title");
 var resultBox = document.getElementById("result-box");
 var resultText = document.getElementById("result-txt");
 var score = document.getElementById("actual-score");
-
-
+//mobile design 375px
+var x=window.matchMedia("(max-width: 376px)");
 let houseButtons = ["paper", "rock", "scissors"];
 
 function reloadPage() {
@@ -23,23 +23,23 @@ function reloadPage() {
     resultBox.style.display = "none";
     gameContainer.style.backgroundImage = "url(./images/bg-triangle.svg)";
 
-    paperBtn.style.width = "136px";
-    paperBtn.style.height = "136px";
-    paperBtn.style.backgroundSize = "70px 70px";
-    paperBtn.style.left = "110px";
-    paperBtn.style.top = "50px";
+    paperBtn.style.width = "110px";
+    paperBtn.style.height = "110px";
+    paperBtn.style.backgroundSize = "60px 60px";
+    paperBtn.style.left = "10px";
+    paperBtn.style.top = "40px";
 
-    rockBtn.style.width = "136px";
-    rockBtn.style.height = "136px";
-    rockBtn.style.backgroundSize = "70px 70px";
-    rockBtn.style.left = "250px";
-    rockBtn.style.top = "286px";
+    rockBtn.style.width = "110px";
+    rockBtn.style.height = "110px";
+    rockBtn.style.backgroundSize = "60px 60px";
+    rockBtn.style.left = "115px";
+    rockBtn.style.top = "276px";
 
-    scissorsBtn.style.width = "136px";
-    scissorsBtn.style.height = "136px";
-    scissorsBtn.style.backgroundSize = "70px 70px";
-    scissorsBtn.style.left = "375px";
-    scissorsBtn.style.top = "50px";
+    scissorsBtn.style.width = "110px";
+    scissorsBtn.style.height = "110px";
+    scissorsBtn.style.backgroundSize = "60px 60px";
+    scissorsBtn.style.left = "235px";
+    scissorsBtn.style.top = "40px";
 
     rockBtn.style.display = "block";
     scissorsBtn.style.display = "block";
@@ -173,49 +173,69 @@ function randomButtons_scissorsSelected(min, max) {
         }, 1200);
 };
 function paperSelected() {
+    if(x.matches){
+        paperBtn.style.width = "110px";
+        paperBtn.style.height = "110px";
+        paperBtn.style.backgroundSize = "60px 60px";
+        paperBtn.style.left = "10px";
+        paperBtn.style.top = "40px";
+    }else{
+        paperBtn.style.width = "200px";
+        paperBtn.style.height = "200px";
+        paperBtn.style.backgroundSize = "120px 120px";
+        paperBtn.style.left = "-45px";
+        paperBtn.style.top = "80px";
+
+    }
     rockBtn.style.display = "none";
     scissorsBtn.style.display = "none";
     gameContainer.style.backgroundImage = "none";
-    paperBtn.style.width = "200px";
-    paperBtn.style.height = "200px";
-    paperBtn.style.backgroundSize = "120px 120px";
-    paperBtn.style.left = "-45px";
-    paperBtn.style.top = "80px";
     mySelectionTitle.style.display = "block";
     houseSelectionTitle.style.display = "block";
-
     randomButtons_paperSelected(0, 2);
 }
 function rockSelected() {
+    if(x.matches){
+        rockBtn.style.width = "110px";
+        rockBtn.style.height = "110px";
+        rockBtn.style.backgroundSize = "60px 60px";
+        rockBtn.style.left = "10px";
+        rockBtn.style.top = "40px";
+    }else{
+        rockBtn.style.width = "200px";
+        rockBtn.style.height = "200px";
+        rockBtn.style.backgroundSize = "120px 120px";
+        rockBtn.style.left = "-45px";
+        rockBtn.style.top = "80px";
+    }
     paperBtn.style.display = "none";
     scissorsBtn.style.display = "none";
     gameContainer.style.backgroundImage = "none";
-    rockBtn.style.width = "200px";
-    rockBtn.style.height = "200px";
-    rockBtn.style.backgroundSize = "120px 120px";
-    rockBtn.style.left = "-45px";
-    rockBtn.style.top = "80px";
     mySelectionTitle.style.display = "block";
     houseSelectionTitle.style.display = "block";
     randomButtons_rockSelected(0, 2);
 }
 function scissorsSelected() {
+    if(x.matches){
+        scissorsBtn.style.width = "110px";
+        scissorsBtn.style.height = "110px";
+        scissorsBtn.style.backgroundSize = "60px 60px";
+        scissorsBtn.style.left = "10px";
+        scissorsBtn.style.top = "40px"; 
+    }else{
+        scissorsBtn.style.width = "200px";
+        scissorsBtn.style.height = "200px";
+        scissorsBtn.style.backgroundSize = "120px 120px";
+        scissorsBtn.style.left = "-45px";
+        scissorsBtn.style.top = "80px";
+    }
     rockBtn.style.display = "none";
     paperBtn.style.display = "none";
     gameContainer.style.backgroundImage = "none";
-    scissorsBtn.style.width = "200px";
-    scissorsBtn.style.height = "200px";
-    scissorsBtn.style.backgroundSize = "120px 120px";
-    scissorsBtn.style.left = "-45px";
-    scissorsBtn.style.top = "80px";
     mySelectionTitle.style.display = "block";
     houseSelectionTitle.style.display = "block";
-
     randomButtons_scissorsSelected(0, 2);
 }
-
-
-
 
 
 paperBtn.addEventListener('click', paperSelected);
