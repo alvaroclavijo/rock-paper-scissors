@@ -3,26 +3,30 @@
     font-family: "Barlow-Semibold";
     src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "Barlow-Bold";
     src: url(../fonts/BarlowSemiCondensed-Bold.ttf);
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(hsl(214, 47%, 23%) 20% , hsl(237, 49%, 15%));
+    background-image: radial-gradient(hsl(214, 47%, 23%) 20%, hsl(237, 49%, 15%));
 }
-#main-container{
+
+#main-container {
     width: 100%;
     height: 100vh;
     margin: auto;
 }
-#header{
+
+#header {
     width: 50%;
     height: 140px;
     margin: auto;
@@ -34,7 +38,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-#game-name{
+
+#game-name {
     color: #F9F9F9;
     margin-left: 3%;
     font-family: "Barlow-Bold";
@@ -42,10 +47,11 @@ body{
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     flex: 1;
 }
-#score-box{
+
+#score-box {
     margin-right: 3%;
     width: 140px;
     height: 120px;
@@ -54,9 +60,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
-#score-box h2{
+
+#score-box h2 {
     font-family: "Barlow-Semibold";
     font-size: 20px;
     text-transform: uppercase;
@@ -66,7 +73,8 @@ body{
     color: hsl(229, 64%, 46%);
 
 }
-#actual-score{
+
+#actual-score {
     font-family: "Barlow-Bold";
     font-size: 60px;
     text-transform: uppercase;
@@ -75,18 +83,20 @@ body{
     margin-top: 0px;
     color: #5A576A;
 }
-#game-container{
+
+#game-container {
     position: relative;
     margin: 30px auto;
     margin-bottom: 0px;
-    width:44% ;
+    width: 44%;
     height: 430px;
     background-image: url(../images/bg-triangle.svg);
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: 190px;
     background-position-y: center;
 }
-.coin{
+
+.coin {
     width: 136px;
     height: 136px;
     border-radius: 50%;
@@ -94,20 +104,22 @@ body{
     background-size: 70px 70px;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     transition: all 1.5s;
-    
+
 }
-#paper{
+
+#paper {
     position: absolute;
     left: 110px;
     top: 50px;
     border: 23px solid hsl(230, 89%, 65%);
     background-image: url(../images/icon-paper.svg);
-    box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
+    box-shadow: 0px 10px hsl(230, 55%, 44%), 0px 8px #afafaf inset;
 
 }
-#paper-housebtn{
+
+#paper-housebtn {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -115,7 +127,7 @@ body{
     background-size: 70px 70px;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     background-size: 120px 120px;
     transition: all 1.5s;
     position: absolute;
@@ -123,17 +135,19 @@ body{
     top: 80px;
     border: 23px solid hsl(230, 89%, 65%);
     background-image: url(../images/icon-paper.svg);
-    box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
+    box-shadow: 0px 10px hsl(230, 55%, 44%), 0px 8px #afafaf inset;
 }
-#scissors{
+
+#scissors {
     position: absolute;
     left: 375px;
     top: 50px;
     border: 23px solid hsl(40, 84%, 53%);
     background-image: url(../images/icon-scissors.svg);
-    box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
+    box-shadow: 0px 10px hsl(39, 88%, 40%), 0px 8px #afafaf inset;
 }
-#scissors-housebtn{
+
+#scissors-housebtn {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -141,7 +155,7 @@ body{
     background-size: 70px 70px;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     background-size: 120px 120px;
     transition: all 1.5s;
     position: absolute;
@@ -149,18 +163,20 @@ body{
     top: 80px;
     border: 23px solid hsl(40, 84%, 53%);
     background-image: url(../images/icon-scissors.svg);
-    box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
+    box-shadow: 0px 10px hsl(39, 88%, 40%), 0px 8px #afafaf inset;
 }
-#rock{
+
+#rock {
     position: absolute;
-    left:250px ;
+    left: 250px;
     top: 286px;
-    border: 23px solid hsl(349, 70%, 56%) ;
+    border: 23px solid hsl(349, 70%, 56%);
     background-image: url(../images/icon-rock.svg);
-    box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset ;
+    box-shadow: 0px 10px hsl(349, 65%, 42%), 0px 8px #afafaf inset;
 
 }
-#rock-housebtn{
+
+#rock-housebtn {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -168,21 +184,22 @@ body{
     background-size: 70px 70px;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     background-size: 120px 120px;
     transition: all 1.5s;
     position: absolute;
     left: 450px;
     top: 80px;
-    border: 23px solid hsl(349, 70%, 56%) ;
+    border: 23px solid hsl(349, 70%, 56%);
     background-image: url(../images/icon-rock.svg);
-    box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset  ;
+    box-shadow: 0px 10px hsl(349, 65%, 42%), 0px 8px #afafaf inset;
 }
-#rules-btn{
+
+#rules-btn {
     font-size: 15px;
     line-height: 40px;
     text-transform: uppercase;
-    font-family:"Barlow-Semibold" ;
+    font-family: "Barlow-Semibold";
     color: #F9F9F9;
     height: 40px;
     width: 120px;
@@ -192,10 +209,11 @@ body{
     position: absolute;
     right: 150px;
     letter-spacing: 3px;
-    cursor:pointer;
+    cursor: pointer;
 
 }
-#rules-window{
+
+#rules-window {
     width: 400px;
     height: 400px;
     background-color: #F9F9F9;
@@ -206,27 +224,31 @@ body{
     display: none;
     transition: all 2s;
 }
-#rules-image{
+
+#rules-image {
     position: absolute;
     left: 50px;
     top: 100px;
 }
-#rules-window h2{
+
+#rules-window h2 {
     font-family: "Barlow-Bold";
     font-size: 35px;
-    color:hsl(229, 64%, 46%);
+    color: hsl(229, 64%, 46%);
     position: absolute;
     top: 20px;
     left: 35px;
 }
-#close-icon{
+
+#close-icon {
     position: absolute;
     right: 20px;
     top: 15px;
     cursor: pointer;
 }
 
-#my-selection-title,#house-selection-title{
+#my-selection-title,
+#house-selection-title {
     width: 220px;
     color: #F9F9F9;
     font-family: "Barlow-Bold";
@@ -236,16 +258,16 @@ body{
     display: none;
 }
 
-#my-selection-title{
+#my-selection-title {
     float: left;
     margin-left: 15px;
 }
 
-#house-selection-title{
+#house-selection-title {
     margin-left: 470px;
 }
 
-#result-box{
+#result-box {
     width: 230px;
     height: 120px;
     position: relative;
@@ -254,41 +276,43 @@ body{
     display: none;
 }
 
-#result-box h2{
+#result-box h2 {
     font-family: "Barlow-Bold";
     color: white;
     font-size: 30px;
     position: absolute;
     top: 10px;
-    margin-left:55px;
+    margin-left: 55px;
 }
 
-#play-again-button{
+#play-again-button {
     width: 200px;
     height: 60px;
-    position:absolute;
-    top: 60px;  
-    left: 15px;  
+    position: absolute;
+    top: 60px;
+    left: 15px;
     border-radius: 7px;
     font-family: "Barlow-Semibold";
     font-size: 18px;
-    cursor:pointer;
+    cursor: pointer;
     color: rgb(126, 26, 26);
     letter-spacing: 3px;
 }
 
-@media (max-width:376px){
-    body{
+@media (max-width:376px) {
+    body {
         width: 100%;
         height: 97vh;
-        background-image: radial-gradient(hsl(214, 47%, 23%) 20% , hsl(237, 49%, 15%));
+        background-image: radial-gradient(hsl(214, 47%, 23%) 20%, hsl(237, 49%, 15%));
     }
-    #main-container{
+
+    #main-container {
         width: 100%;
         height: 96vh;
         margin: auto;
     }
-    #header{
+
+    #header {
         width: 85%;
         height: 110px;
         margin-left: 25px;
@@ -300,7 +324,8 @@ body{
         justify-content: space-between;
         align-items: center;
     }
-    #game-name{
+
+    #game-name {
         color: #F9F9F9;
         margin-left: 3%;
         font-family: "Barlow-Bold";
@@ -308,10 +333,11 @@ body{
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
-        justify-content:space-around;
+        justify-content: space-around;
         flex: 1;
     }
-    #score-box{
+
+    #score-box {
         margin-right: 3%;
         width: 120px;
         height: 100px;
@@ -320,9 +346,10 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+
     }
-    #score-box h2{
+
+    #score-box h2 {
         font-family: "Barlow-Semibold";
         font-size: 23px;
         text-transform: uppercase;
@@ -330,9 +357,10 @@ body{
         justify-content: center;
         margin-top: 10px;
         color: hsl(229, 64%, 46%);
-    
+
     }
-    #actual-score{
+
+    #actual-score {
         font-family: "Barlow-Bold";
         font-size: 50px;
         text-transform: uppercase;
@@ -342,20 +370,21 @@ body{
         color: #5A576A;
     }
 
-    #game-container{
+    #game-container {
         position: relative;
         margin: 0px 0px;
         margin-bottom: 0px;
-        width:100% ;
+        width: 100%;
         height: 430px;
         background-image: url(../images/bg-triangle.svg);
-        background-size:200px 200px ;
+        background-size: 200px 200px;
         background-position: center;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
     }
-    .coin{
+
+    .coin {
         width: 110px;
         height: 110px;
         border-radius: 50%;
@@ -363,20 +392,22 @@ body{
         background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
-        background-position:center ;
+        background-position: center;
         transition: all 1.5s;
-        
+
     }
-    #paper{
+
+    #paper {
         position: absolute;
         left: 10px;
         top: 40px;
         border: 12px solid hsl(230, 89%, 65%);
         background-image: url(../images/icon-paper.svg);
-        box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
-    
+        box-shadow: 0px 10px hsl(230, 55%, 44%), 0px 8px #afafaf inset;
+
     }
-    #paper-housebtn{
+
+    #paper-housebtn {
         width: 110px;
         height: 110px;
         border-radius: 50%;
@@ -384,24 +415,26 @@ body{
         background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
-        background-position:center ;
+        background-position: center;
         transition: all 1.5s;
         position: absolute;
         left: 225px;
         top: 40px;
         border: 12px solid hsl(230, 89%, 65%);
         background-image: url(../images/icon-paper.svg);
-        box-shadow: 0px 10px hsl(230, 55%, 44%),0px 8px #afafaf inset;
+        box-shadow: 0px 10px hsl(230, 55%, 44%), 0px 8px #afafaf inset;
     }
-    #scissors{
+
+    #scissors {
         position: absolute;
         left: 235px;
         top: 40px;
         border: 12px solid hsl(40, 84%, 53%);
         background-image: url(../images/icon-scissors.svg);
-        box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
+        box-shadow: 0px 10px hsl(39, 88%, 40%), 0px 8px #afafaf inset;
     }
-    #scissors-housebtn{
+
+    #scissors-housebtn {
         width: 110px;
         height: 110px;
         border-radius: 50%;
@@ -409,25 +442,27 @@ body{
         background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
-        background-position:center ;
+        background-position: center;
         transition: all 1.5s;
         position: absolute;
         left: 225px;
         top: 40px;
         border: 12px solid hsl(40, 84%, 53%);
         background-image: url(../images/icon-scissors.svg);
-        box-shadow: 0px 10px hsl(39, 88%, 40%),0px 8px #afafaf inset ;
+        box-shadow: 0px 10px hsl(39, 88%, 40%), 0px 8px #afafaf inset;
     }
-    #rock{
+
+    #rock {
         position: absolute;
-        left:115px ;
+        left: 115px;
         top: 276px;
-        border: 12px solid hsl(349, 70%, 56%) ;
+        border: 12px solid hsl(349, 70%, 56%);
         background-image: url(../images/icon-rock.svg);
-        box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset ;
-    
+        box-shadow: 0px 10px hsl(349, 65%, 42%), 0px 8px #afafaf inset;
+
     }
-    #rock-housebtn{
+
+    #rock-housebtn {
         width: 110px;
         height: 110px;
         border-radius: 50%;
@@ -435,20 +470,21 @@ body{
         background-size: 60px 60px;
         cursor: pointer;
         background-repeat: no-repeat;
-        background-position:center ;
+        background-position: center;
         transition: all 1.5s;
         position: absolute;
         left: 225px;
         top: 40px;
-        border: 12px solid hsl(349, 70%, 56%) ;
+        border: 12px solid hsl(349, 70%, 56%);
         background-image: url(../images/icon-rock.svg);
-        box-shadow: 0px 10px hsl(349, 65%, 42%),0px 8px #afafaf inset  ;
+        box-shadow: 0px 10px hsl(349, 65%, 42%), 0px 8px #afafaf inset;
     }
-    #rules-btn{
+
+    #rules-btn {
         font-size: 15px;
         line-height: 40px;
         text-transform: uppercase;
-        font-family:"Barlow-Semibold" ;
+        font-family: "Barlow-Semibold";
         color: #F9F9F9;
         height: 40px;
         width: 120px;
@@ -457,12 +493,13 @@ body{
         border-radius: 6px;
         position: absolute;
         right: 30px;
-        top:600px;
+        top: 600px;
         letter-spacing: 3px;
-        cursor:pointer;
-    
+        cursor: pointer;
+
     }
-    #rules-window{
+
+    #rules-window {
         width: 350px;
         height: 394px;
         background-color: #F9F9F9;
@@ -472,29 +509,32 @@ body{
         left: 15px;
         display: none;
         transition: all 2s;
-}
+    }
 
-    #rules-image{
+    #rules-image {
         position: absolute;
         left: 23px;
         top: 100px;
     }
-    #rules-window h2{
+
+    #rules-window h2 {
         font-family: "Barlow-Bold";
         font-size: 25px;
-        color:hsl(229, 64%, 46%);
+        color: hsl(229, 64%, 46%);
         position: absolute;
         top: 20px;
         left: 35px;
     }
-    #close-icon{
+
+    #close-icon {
         position: absolute;
         right: 20px;
         top: 15px;
         cursor: pointer;
     }
-    
-    #my-selection-title,#house-selection-title{
+
+    #my-selection-title,
+    #house-selection-title {
         width: 220px;
         color: #F9F9F9;
         font-family: "Barlow-Bold";
@@ -503,23 +543,23 @@ body{
         text-transform: uppercase;
         display: none;
     }
-    
-    #my-selection-title{
+
+    #my-selection-title {
         float: left;
         width: 30%;
         margin-left: 15px;
         margin-top: 0px;
         font-size: 20px;
     }
-    
-    #house-selection-title{
+
+    #house-selection-title {
         width: 46%;
         margin-left: 200px;
         margin-top: 25px;
         font-size: 20px;
     }
-    
-    #result-box{
+
+    #result-box {
         width: 230px;
         height: 120px;
         position: relative;
@@ -527,30 +567,27 @@ body{
         left: 75px;
         display: none;
     }
-    
-    #result-box h2{
+
+    #result-box h2 {
         font-family: "Barlow-Bold";
         color: white;
         font-size: 30px;
         position: absolute;
         top: 10px;
-        margin-left:55px;
+        margin-left: 55px;
     }
-    
-    #play-again-button{
+
+    #play-again-button {
         width: 200px;
         height: 60px;
-        position:absolute;
-        top: 60px;  
-        left: 15px;  
+        position: absolute;
+        top: 60px;
+        left: 15px;
         border-radius: 7px;
         font-family: "Barlow-Semibold";
         font-size: 18px;
-        cursor:pointer;
+        cursor: pointer;
         color: rgb(126, 26, 26);
         letter-spacing: 3px;
     }
 }
-
-
-
